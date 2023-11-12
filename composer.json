@@ -8,6 +8,11 @@
             "Jefvda\\PhpResultMonad\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Jefvda\\PhpResultMonad\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "JefvdA"

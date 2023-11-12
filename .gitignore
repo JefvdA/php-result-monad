@@ -476,3 +476,6 @@ composer.lock
 ##### Php-cs-fixer
 .php-cs-fixer.cache
 
+##### Phpunit
+.phpunit.cache
+
