@@ -473,3 +473,6 @@ composer.lock
 *.sass.map
 *.scss.map
 
+##### Php-cs-fixer
+.php-cs-fixer.cache
+
