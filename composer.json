@@ -13,5 +13,7 @@
             "name": "JefvdA"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
 }
