@@ -1,0 +1,17 @@
+{
+    "name": "jefvda/php-result-monad",
+    "description": "A 'Result' monad type for php",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jefvda\\PhpResultMonad\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JefvdA"
+        }
+    ],
+    "require": {}
+}
