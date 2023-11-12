@@ -478,4 +478,5 @@ composer.lock
 
 ##### Phpunit
 .phpunit.cache
+.phpunit.result.cache
 
