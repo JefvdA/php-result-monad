@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace JefvdA\PhpResultMonad\Tests;
 
 use Exception;
-use Jefvda\PhpResultMonad\Result;
+use JefvdA\PhpResultMonad\Result;
 use PHPUnit\Framework\TestCase;
 
 final class ResultTest extends TestCase

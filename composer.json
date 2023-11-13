@@ -5,12 +5,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Jefvda\\PhpResultMonad\\": "src/"
+            "JefvdA\\PhpResultMonad\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jefvda\\PhpResultMonad\\Tests\\": "tests/"
+            "JefvdA\\PhpResultMonad\\Tests\\": "tests/"
         }
     },
     "authors": [

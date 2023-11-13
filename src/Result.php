@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jefvda\PhpResultMonad;
+namespace JefvdA\PhpResultMonad;
 
 use Exception;
 
