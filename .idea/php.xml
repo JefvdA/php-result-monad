@@ -8,7 +8,7 @@
   </component>
   <component name="PHPCSFixerOptionsConfiguration">
     <option name="codingStandard" value="Custom" />
-    <option name="rulesetPath" value="/opt/project/.php_cs.php" />
+    <option name="rulesetPath" value="/opt/project/.php-cs-fixer.php" />
     <option name="transferred" value="true" />
   </component>
   <component name="PHPCodeSnifferOptionsConfiguration">
