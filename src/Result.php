@@ -17,7 +17,7 @@ final readonly class Result
     public function __construct(
         private mixed $value,
         private ?Exception $exception,
-        private bool $isOk,
+        private bool $isSuccess,
     ) {
     }
 
@@ -59,14 +59,14 @@ final readonly class Result
         return $this->exception;
     }
 
-    public function isOk(): bool
+    public function isSuccess(): bool
     {
-        return $this->isOk;
+        return $this->isSuccess;
     }
 
     public function match(callable $valueCallback, callable $exceptionCallback): mixed
     {
-        if ($this->isOk()) {
+        if ($this->isSuccess()) {
             return $valueCallback($this->getValue());
         } else {
             return $exceptionCallback($this->getException());

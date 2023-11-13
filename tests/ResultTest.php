@@ -10,27 +10,27 @@ use PHPUnit\Framework\TestCase;
 
 final class ResultTest extends TestCase
 {
-    public function testCreateFromValueReturnsCorrectResultThatIsOk(): void
+    public function testCreateFromValueReturnsCorrectResultThatIsSuccess(): void
     {
         $value = 'This is the value of the result!';
         $result = Result::createFromValue($value);
 
         self::assertEquals($value, $result->getValue());
         self::assertNull($result->getException());
-        self::assertTrue($result->isOk());
+        self::assertTrue($result->isSuccess());
     }
 
-    public function testCreateFromExceptionReturnsCorrectResultThatIsNotOk(): void
+    public function testCreateFromExceptionReturnsCorrectResultThatIsNotSuccess(): void
     {
         $exception = new Exception('This is the exception of the result!');
         $result = Result::createFromException($exception);
 
         self::assertNull($result->getValue());
         self::assertEquals($exception, $result->getException());
-        self::assertFalse($result->isOk());
+        self::assertFalse($result->isSuccess());
     }
 
-    public function testMatchWillRunCorrectCallbackWhenResultIsOk(): void
+    public function testMatchWillRunCorrectCallbackWhenResultIsSuccess(): void
     {
         $value = 'This is the value of the result!';
         /** @var Result<string> $result */
@@ -48,7 +48,7 @@ final class ResultTest extends TestCase
         self::assertEquals($matchResult, $value);
     }
 
-    public function testMatchWillRunCorrectCallbackWhenResultIsNotOk(): void
+    public function testMatchWillRunCorrectCallbackWhenResultIsNotSuccess(): void
     {
         $exception = new Exception('This is the exception of the result!');
         $result = Result::createFromException($exception);
