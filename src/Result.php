@@ -87,9 +87,12 @@ final readonly class Result
      */
     public function match(callable $valueCallback, callable $exceptionCallback): mixed
     {
-        if ($this->isSuccess()) {
+        if ($this->isSuccess())
+        {
             return $valueCallback($this->getValue());
-        } else {
+        }
+        else
+        {
             return $exceptionCallback($this->getException());
         }
     }
