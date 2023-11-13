@@ -46,6 +46,9 @@ final readonly class Result
         );
     }
 
+    /**
+     * @return T|null
+     */
     public function getValue(): mixed
     {
         return $this->value;
