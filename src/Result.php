@@ -14,7 +14,7 @@ final readonly class Result
     /**
      * @param T|null $value
      */
-    public function __construct(
+    private function __construct(
         private mixed $value,
         private ?Exception $exception,
         private bool $isSuccess,
