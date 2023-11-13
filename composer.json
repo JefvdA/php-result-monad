@@ -1,6 +1,7 @@
 {
     "name": "jefvda/php-result-monad",
     "description": "A 'Result' monad type for php",
+    "version": "1.0.0",
     "type": "library",
     "license": "MIT",
     "autoload": {
