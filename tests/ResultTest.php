@@ -29,4 +29,39 @@ final class ResultTest extends TestCase
         self::assertEquals($exception, $result->getException());
         self::assertFalse($result->isOk());
     }
+
+    public function testMatchWillRunCorrectCallbackWhenResultIsOk(): void
+    {
+        $value = 'This is the value of the result!';
+        /** @var Result<string> $result */
+        $result = Result::createFromValue($value);
+
+        $matchResult = $result->match(
+            static function (string $value): string {
+                return $value;
+            },
+            static function (Exception $exception): Exception {
+                return $exception;
+            }
+        );
+
+        self::assertEquals($matchResult, $value);
+    }
+
+    public function testMatchWillRunCorrectCallbackWhenResultIsNotOk(): void
+    {
+        $exception = new Exception('This is the exception of the result!');
+        $result = Result::createFromException($exception);
+
+        $matchResult = $result->match(
+            static function (string $value): string {
+                return $value;
+            },
+            static function (Exception $exception): Exception {
+                return $exception;
+            }
+        );
+
+        self::assertEquals($matchResult, $exception);
+    }
 }

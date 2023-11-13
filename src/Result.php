@@ -63,4 +63,13 @@ final readonly class Result
     {
         return $this->isOk;
     }
+
+    public function match(callable $valueCallback, callable $exceptionCallback): mixed
+    {
+        if ($this->isOk()) {
+            return $valueCallback($this->getValue());
+        } else {
+            return $exceptionCallback($this->getException());
+        }
+    }
 }
