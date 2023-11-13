@@ -4,6 +4,13 @@
 
 The PHP Result Monad library provides a simple and effective way to handle the results of actions, offering an alternative approach to exception handling without the need for throwing exceptions. The core component of this library is the `Result` class, which encapsulates the outcome of an action and can be created from either a successful value or an exception.
 
+## 🔗 Installation
+
+You can install this package via Composer:
+```bash
+composer require jefvda/php-result-monad
+```
+
 ## Result Class
 
 ### Factory Methods
