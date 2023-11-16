@@ -1,29 +1,29 @@
 {
-    "name": "jefvda/php-result-monad",
-    "description": "A 'Result' monad type for php",
-    "version": "1.0.0",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "JefvdA\\PhpResultMonad\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "JefvdA\\PhpResultMonad\\Tests\\": "tests/"
-        }
-    },
-    "authors": [
-        {
-            "name": "JefvdA"
-        }
-    ],
-    "require-dev": {
-        "phpunit/phpunit": "*",
-        "phpstan/phpstan": "^1.10"
-    },
-    "scripts": {
-        "fix": "tools/php-cs-fixer/vendor/bin/php-cs-fixer fix"
+  "name": "jefvda/php-result-monad",
+  "description": "A 'Result' monad type for php",
+  "version": "1.0.1",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "JefvdA\\PhpResultMonad\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JefvdA\\PhpResultMonad\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "JefvdA"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "phpstan/phpstan": "^1.10"
+  },
+  "scripts": {
+    "fix": "tools/php-cs-fixer/vendor/bin/php-cs-fixer fix"
+  }
 }
